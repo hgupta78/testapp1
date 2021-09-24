@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build": "ng build && node server.js",
+    "build": "ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "start": "ng build && node server.js"
+    "start": "ng build",
+    "heroku-postbuild": "node server.js"
   },
   "private": true,
   "dependencies": {
