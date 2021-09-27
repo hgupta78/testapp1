@@ -1,13 +1,10 @@
 {
-  "name": "my-app",
+  "name": "myapp",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng build && node server.js",
-    "build": "ng build && node server.js",
-    "run-watch": "ng build && node server.js",
-    "preinstall": "npm install -g @angular/cli",
-    "postinstall": "ng build",
+    "start": "node server.js",
+    "build": "ng build --prod",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "watch": "npm-watch"
